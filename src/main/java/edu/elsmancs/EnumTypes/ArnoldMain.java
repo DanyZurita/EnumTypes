@@ -1,6 +1,6 @@
-package org.foobarspam.arnoldEnumType.main;
+package edu.elsmancs.EnumTypes;
 
-import org.foobarspam.arnoldEnumType.logica.Planeta;
+
 
 public class ArnoldMain {
 	
