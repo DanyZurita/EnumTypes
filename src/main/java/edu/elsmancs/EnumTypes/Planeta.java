@@ -1,9 +1,6 @@
 package edu.elsmancs.EnumTypes;
 
 import java.util.EnumSet;
-import java.util.HashSet;
-import java.util.Set;
-
 
 
 public enum Planeta {
@@ -51,5 +48,9 @@ public enum Planeta {
     
     public static EnumSet<Planeta> getPlanetasTerrestres(){
         return EnumSet.range(MERCURY, MARS);
+    }
+    
+    public static EnumSet<Planeta> getGigantesGaseosos(){
+        return EnumSet.range(JUPITER, NEPTUNE);
     }
 }
