@@ -20,4 +20,12 @@ public enum Planeta {
         this.mass = mass;
         this.radius = radius;
     }
+
+    public double getMass() {
+        return this.mass;
+    }
+
+    public double getRadius() {
+        return this.radius;
+    }
 }
