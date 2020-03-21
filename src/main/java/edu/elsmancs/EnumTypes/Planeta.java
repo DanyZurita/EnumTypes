@@ -28,5 +28,10 @@ public enum Planeta {
     public double getRadio() {
         return this.radio;
     }
-  
+    
+    private double getGravity() {
+        return G * getMasa() / (getRadio() * getRadio());
+    }
+    
+
 }
