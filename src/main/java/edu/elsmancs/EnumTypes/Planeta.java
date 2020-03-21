@@ -1,5 +1,9 @@
 package edu.elsmancs.EnumTypes;
 
+import java.util.EnumSet;
+import java.util.HashSet;
+import java.util.Set;
+
 
 
 public enum Planeta {
@@ -45,5 +49,7 @@ public enum Planeta {
         return masaTerricola(peso) * getGravity();
     }
     
-    
+    public static EnumSet<Planeta> getPlanetasTerrestres(){
+        return EnumSet.range(MERCURY, MARS);
+    }
 }
