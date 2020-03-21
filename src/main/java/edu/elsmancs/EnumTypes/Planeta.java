@@ -29,12 +29,20 @@ public enum Planeta {
         return this.radio;
     }
     
+    private double getGravity() {
+        return G * getMasa() / (getRadio() * getRadio());
+    }
+    
     private double getGravity(Planeta planeta) {
         return G * planeta.getMasa() / (planeta.getRadio() * planeta.getRadio());
     }
     
     private double masaTerricola(double peso) {
         return peso / getGravity(EARTH);
+    }
+    
+    public double pesoSuperficie(double peso) {
+        return masaTerricola(peso) * getGravity();
     }
     
     
