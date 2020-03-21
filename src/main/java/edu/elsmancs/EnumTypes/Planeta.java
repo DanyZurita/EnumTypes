@@ -13,19 +13,20 @@ public enum Planeta {
     NEPTUNE (1.024e+26, 2.4746e7); 
     
     public final double G = 6.67400e-11;
-    private double mass = 0.0;
-    private double radius = 0.0;
+    private double masa = 0.0;
+    private double radio = 0.0;
     
-    Planeta (double mass, double radius) {
-        this.mass = mass;
-        this.radius = radius;
+    Planeta (double masa, double radio) {
+        this.masa = masa;
+        this.radio = radio;
     }
 
-    public double getMass() {
-        return this.mass;
+    public double getMasa() {
+        return this.masa;
     }
 
-    public double getRadius() {
-        return this.radius;
+    public double getRadio() {
+        return this.radio;
     }
+  
 }
