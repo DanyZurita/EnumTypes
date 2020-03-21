@@ -33,5 +33,9 @@ public enum Planeta {
         return G * getMasa() / (getRadio() * getRadio());
     }
     
+    private double getGravity(Planeta planeta) {
+        return G * planeta.getMasa() / (planeta.getRadio() * planeta.getRadio());
+    }
+    
 
 }
