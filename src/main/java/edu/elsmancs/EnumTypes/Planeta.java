@@ -16,7 +16,7 @@ public enum Planeta {
     private double mass = 0.0;
     private double radius = 0.0;
     
-    private Planeta (double mass, double radius) {
+    Planeta (double mass, double radius) {
         this.mass = mass;
         this.radius = radius;
     }
